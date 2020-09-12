@@ -4,19 +4,19 @@ struct A{double a;string b;};
 
 int main ()
 {
-    ///pair ºÍstruct²ğ°ü
+    ///pair å’Œstructæ‹†åŒ…
     print(pii(1,2));
     auto [a, b] = pii(1,2);
     print (a, b);
-    auto [c, d] = A{3.14, "pai"}; ///structÄ¬ÈÏ{}¹¹Ôì£¬class²»ÄÜ
+    auto [c, d] = A{3.14, "pai"}; ///structé»˜è®¤{}æ„é€ ï¼Œclassä¸èƒ½
     print (c, d);
 
-    ///fail,½á¹¹»¯°ó¶¨²»ÄÜÇ¶Ì×
+    ///fail,ç»“æ„åŒ–ç»‘å®šä¸èƒ½åµŒå¥—
     /****
     auto [x, [y, z]] = pair<int,pii>{1,{2,3}};
     print (x, y, z);*/
 
-    ///map²ğ°ü±éÀú
+    ///mapæ‹†åŒ…éå†
     map<int, string> i2s {{1, "h"}, {2, "hh"}, {3, "hhh"}};
     for (auto [k, v] : i2s)
         print (k, v);

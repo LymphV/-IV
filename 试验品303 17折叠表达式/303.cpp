@@ -4,7 +4,7 @@ using namespace std;
 template<typename ... T>
 auto sum(T ... arg)
 {
-    return (arg + ...);//ÓÒÕÛµş
+    return (arg + ...);//å³æŠ˜å 
 }
 
 /*template <typename ... T>
